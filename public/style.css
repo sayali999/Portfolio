@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+    position: relative;
+}
+
+/* navbar */
+.navbar-brand {
+    color: white !important;
+    font-weight: 700;
+
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.navbar-toggler {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.navbar-toggler i {
+    font-size: 1.8rem;
+    color: white !important;
+
+}
+
+.navbar-nav .nav-link:hover {
+    color: red;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: red !important;
+}
+
+
+/* header */
+
+.my-img {
+    width: 450px;
+    height: 450px;
+    animation: floatImage 3s ease-in-out infinite;
+    border: 2px solid gainsboro;
+    box-shadow: 0 0 0.3rem #59B2F4;
+    padding: 10px;
+}
+
+.typewriter h4{
+    letter-spacing: 0.1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    border-right:  solid 3px white;
+    animation: typewriter 5s steps(25) 1s forwards infinite,
+    blink 0.5s steps(1) infinite;
+    
+}
+
+@keyframes typewriter{
+    to{
+        width: 28ch;
+    }
+}
+
+@keyframes blink{
+    from{
+            border-color: transparent;
+    }
+    50%{
+  border-color: white;
+    }
+    to{
+        border-color: transparent;
+    }
+}
+.download-resume button {
+    background: transparent;
+    transition: .5s ease;
+}
+
+.resume-btn {
+    color: white;
+}
+
+.download-resume button:hover .resume-btn {
+    color: black;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: .1rem solid white;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: white;
+    margin: 1rem 1rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: #59B2F4;
+    color: white;
+    box-shadow: 0 0 0.5rem #59B2F4;
+}
+
+
+/* about */
+.education-content .timeline .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+/* .education-content .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+} */
+
+.education-content .timeline .timeline-item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 60%;
+    left: 7px;
+    top: 0;
+    background-color: rgb(207, 55, 55);
+}
+
+.education-content .timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: rgb(207, 55, 55);
+}
+
+.education-content .timeline .circle-dot .timeline-date {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+/* skills */
+
+
+.skill .icons-col {
+    padding: 3rem;
+}
+
+.skill .icons-col .icons {
+    padding: 2.25rem 2.25rem 0.5rem 2.25rem;
+    background-color: white;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.skill .icons-col .icons:hover {
+    /* background-color: gainsboro; */
+    box-shadow: 0 0 0.5rem #59B2F4;
+}
+
+.skill .icons-col .icons .img-thumbnail {
+    padding: 1.5rem;
+}
+
+/* contact */
+.contactus .contact-form {
+    width: 650px;
+}
+
+.contactus .contact-form .form-floating .form-control:focus {
+    outline: none;
+
+}
+
+.contactus .contact-form .form-floating label {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* scroll */
+.scrollup button {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+    background: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    border: 1px solid linear-gradient(to top, #2a5298 0%, #2a5298 1%, #2a5298 100%);
+    border-radius: 50%;
+    color: white;
+ 
+    
+}
+
+.scrollup button i{
+    /* animation: floatUp 1.2s linear infinite alternate-reverse; */
+    animation: floatUp 1s ease-in-out infinite;
+}
+
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatUp {
+ 
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.2rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/****************************media query *************************************/
+
+@media screen and (max-width: 1200px){
+    .skill .icons-col .icons .img-thumbnail {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .my-img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .skill .icons-col {
+        padding: 1rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 768px){
+    .my-img { 
+        margin-top: 5rem;
+    }
+    .skill .icons-col .icons .img-thumbnail {
+        padding: 3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    .navbar-nav .nav-link {
+        color: black;
+       text-decoration: none;
+            margin-left: 1rem;
+    }
+
+    .my-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .skill .icons-col {
+        padding: 10px;
+    }
+
+    .skill .icons-col .icons {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .skill .icons-col .icons .img-thumbnail {
+        padding: 1.9rem;
+    }
+
+    .contactus .contact-form {
+        width: 350px;
+    }
+
+    .scrollup button {
+
+        bottom: 2rem;
+        right: 1rem;
+
+    }
+
+}
+
+@media screen and (max-width: 350px){
+    .contactus .contact-form {
+        width: 300px;
+        /* background-color: red; */
+    }
+
+}
