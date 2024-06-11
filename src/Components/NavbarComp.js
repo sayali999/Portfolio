@@ -8,13 +8,10 @@ import {Link} from 'react-scroll'
 const NavbarComp = () => {
   return (
     <>
-      <Navbar expand='lg' className="p-4 border-bottom border-light" style={{ backgroundColor: "#191f36"}} id='top'>
+      <Navbar expand='sm' className="p-4 border-bottom border-light" style={{ backgroundColor: "#191f36"}} id='top'>
         <Container>
           <Navbar.Brand href="#" data-aos="zoom-in">Portfolio</Navbar.Brand>
-          <Navbar.Toggle  aria-controls={`offcanvasNavbar-expand-lg`} >
-          {/* <i class="bi bi-filter-left"></i> */}
-          <i class="bi bi-list"></i>
-          </Navbar.Toggle>
+          
           <Navbar.Offcanvas
             id={`offcanvasNavbar-expand-lg`}
             aria-labelledby={`offcanvasNavbarLabel-expand-lg`}

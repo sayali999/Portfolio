@@ -20,6 +20,7 @@ body {
 .navbar-brand {
     color: white !important;
     font-weight: 700;
+  
 
 }
 
@@ -27,6 +28,7 @@ body {
     color: white;
     text-decoration: none;
     margin-right: 1rem;
+    
 }
 
 .navbar-toggler {
@@ -258,9 +260,17 @@ body {
 /****************************media query *************************************/
 
 @media screen and (max-width: 1200px){
-    .skill .icons-col .icons .img-thumbnail {
-        padding: 1rem;
+    .skill .icons-col {
+        padding: 2rem;
     }
+    
+   
+   
+    
+    .skill .icons-col .icons .img-thumbnail {
+        padding: 1.5rem;
+    }
+    
 }
 
 @media screen and (max-width: 992px){
@@ -291,9 +301,9 @@ body {
 @media screen and (max-width: 576px) {
 
     .navbar-nav .nav-link {
-        color: black;
+        color: white;
        text-decoration: none;
-            margin-left: 1rem;
+    
     }
 
     .my-img {
