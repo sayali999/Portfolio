@@ -11,6 +11,7 @@ import { useEffect, useState } from 'react';
 import Button from 'react-bootstrap/Button';
 // import Nav from 'react-bootstrap/Nav';
 import file from '../Assests/sayalikhadseresume.pdf';
+import pic from '../Assests/pic2.jpg';
 
 const Header = () => {
   const [isLoading, setLoading] = useState(false);
@@ -43,7 +44,7 @@ const Header = () => {
         <Row className="align-items-center min-vh-100 align-content-center p-0 m-0 ">
           <Col lg={6} className='mb-5'>
             <div className='home-img text-center' data-aos="zoom-in" >
-              <Image src={img} roundedCircle className='my-img rounded object-fit-cover' />
+              <Image src={pic} roundedCircle className='my-img rounded object-fit-cover' />
             </div>
           </Col>
           <Col lg={6} className='px-'>
