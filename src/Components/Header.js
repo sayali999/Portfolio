@@ -63,7 +63,7 @@ const Header = () => {
                     disabled={isLoading}
                     onClick={!isLoading ? handleClick : null}
                   >
-                    <a href={file} download='sayali khadse resume' className='resume-btn text-decoration-none' >{isLoading ? 'Downloading…' : 'Download CV'}</a> <i class="fw-bold mx-2 bi bi-download"></i>
+                    <a href={file} download='sayalikhadseresume' className='resume-btn text-decoration-none' >{isLoading ? 'Downloading…' : 'Download CV'}</a> <i class="fw-bold mx-2 bi bi-download"></i>
                   </Button>
                 </div>
                 <div className='social-media'>
