@@ -51,7 +51,7 @@ const Header = () => {
             <div className='text-white px-3' >
               <div className='home-content' data-aos="fade-up">
                 <p className='text-ternery mb-1'>Hello, I'm</p>
-                <h1 className='text-danger text-uppercase fs-1 fw-bold'>Prajakta Sartabe</h1>
+                <h1 className='text-danger text-uppercase fs-1 fw-bold'>Sayali Khadse</h1>
                 <div className='typewriter'>
                   <h4 className='  mb-4'>MERN Stack Web Developer !</h4>
                 </div>
